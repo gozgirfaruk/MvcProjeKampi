@@ -18,5 +18,6 @@ namespace EntityLayer.Concrete
         public string ImageUrlOne { get; set; }
         [StringLength(150)]
         public string ImageUrlTwo { get; set; }
+        public bool AboutStatus { get; set; }
     }
 }
