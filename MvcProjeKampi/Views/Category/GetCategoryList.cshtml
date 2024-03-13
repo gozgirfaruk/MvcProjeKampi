@@ -1,0 +1,40 @@
+﻿﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    Layout = null;
+}
+
+<table class="table table-hover">
+
+    <tr>
+        <th>#</th>
+        <th>Kategori</th>
+        <th>Açıklama</th>
+        <th>Durum</th>
+        <th>Başlıklar</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.CategoryID</th>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>
+                @if (item.Status == true)
+                {
+                    <input type="checkbox" checked disabled />
+                }
+                else
+                {
+                    <input type="checkbox" disabled />
+                }
+            </td>
+            <td><a href="#" class="btn btn-outline-primary"><i class="fa-regular fa-bookmark"></i>Başlıklar</a></td>
+            <td><a href="/Admin/EditCategory/@item.CategoryID" class="btn btn-outline-warning"><i class="fa-solid fa-pen"></i>Güncelle</a></td>
+            <td> <a href="/Admin/Delete/@item.CategoryID" class="btn btn-outline-danger"><i class="fa-solid fa-circle-minus"></i>Sil</a></td>
+        </tr>
+    }
+</table>
+<td> <a href="/Category/AddCategory/" class="btn btn-outline-success"><i class="fa-solid fa-plus"></i>Yeni Kategori</a></td>
