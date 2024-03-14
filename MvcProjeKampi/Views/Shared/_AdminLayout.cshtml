@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="icon"  type="image/x-icon" href="~/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
     <title>Admin Yönetim Sistemi</title>
 
     <!-- Font Awesome Icons -->
@@ -60,15 +60,19 @@ to get the desired effect
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="/Statistic/Index/" class="nav-link">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <p>
-                                    İstatistik
+                        @if (User.IsInRole("1"))
+                        {
+                            <li class="nav-item">
+                                <a href="/Statistic/Index/" class="nav-link">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <p>
+                                        İstatistik
 
-                                </p>
-                            </a>
-                        </li>
+                                    </p>
+                                </a>
+                            </li>
+                        }
+
                         <li class="nav-item">
                             <a href="/AdminCategory/Index/" class="nav-link">
                                 <i class="fa-solid fa-layer-group"></i>

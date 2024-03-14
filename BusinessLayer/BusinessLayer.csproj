@@ -65,6 +65,7 @@
     <Compile Include="Abstract\IContactService.cs" />
     <Compile Include="Abstract\IContentService.cs" />
     <Compile Include="Abstract\IHeadingService.cs" />
+    <Compile Include="Abstract\IImegaFileService.cs" />
     <Compile Include="Abstract\IMessageService.cs" />
     <Compile Include="Abstract\IWriterService.cs" />
     <Compile Include="Concrete\CategoryMenager.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Concrete\ContentMenager.cs" />
     <Compile Include="Concrete\HeadingMenager.cs" />
     <Compile Include="Concrete\AboutMenager.cs" />
+    <Compile Include="Concrete\IMegaMenager.cs" />
     <Compile Include="Concrete\MessageMenager.cs" />
     <Compile Include="Concrete\WriterMenager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
