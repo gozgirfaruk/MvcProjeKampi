@@ -33,7 +33,31 @@ namespace MvcProjeKampi.Controllers
             {
                 return RedirectToAction("Index");
             }
+            
+        }
+
+        [HttpGet]
+        public ActionResult WriterLogin()
+        {
             return View();
+        }
+        [HttpPost]
+        public ActionResult WriterLogin(Writer p)
+        {
+            Context c = new Context();
+            var writeruserinfo = c.Writers.FirstOrDefault(x => x.eMail == p.eMail && x.Password == p.Password);
+            if (writeruserinfo != null)
+            {
+                FormsAuthentication.SetAuthCookie(writeruserinfo.eMail, false);
+                Session["WriterMail"] = writeruserinfo.eMail;
+                return RedirectToAction("MyContent", "WriterPanelContent");
+            }
+
+            else
+            {
+                return RedirectToAction("WriterLogin");
+            }
+        
         }
     }
 }
