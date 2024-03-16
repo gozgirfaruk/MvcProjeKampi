@@ -1,4 +1,52 @@
+# SÖZLÜK FORM UYGULAMASI
 
+### Proje Hakkında 
+Proje insanların gündem akışını takip etmesini, yaşamış oldukları problemler konusunda 
+yardım almalarını ve konu başlıklarına dair bilgi havuzu oluşturmak, kullanıcıların bu 
+bilgiler hakkında yorum yapabilmelerini sağlamaktır.Kullanıcılar başlıklar aradıkları
+kelime veya kavramların başlıklarını açarak diğer kullanıcıların yorumlarını ve 
+bilgilerini okuyabilirler.
+--------------------
+### Proje Detay
+* Proje N Katmanlı Mimari kullanılarak geliştirildi. Poje içerisinde 4 farklı kullanıcı paneli ile sunulmaktadır.
+
+####  1. Admin Paneli
+         - Yetenek Kartını Sergileyebilir
+         - Sözlük uygulamasına dair anlık verileri grafik üzerinden görüntüleyebilir,
+         - Kategori, yazar, başlık alanları için crud işlemleri gerçekleştirebilir,
+         - Kullanıcıların yetki düzeylerini belirleyebilir,
+         - Oluşturulan başlıkları Excel,Pdf gibi formatlarda raporlayabilir,
+         - Başlıklara gelen yorumları filtreleyerek görüntüleyebilir,
+         - Hakkımızda metni oluşturabilir ve sözlük içerisinde yer alacak görselleri düzenleyebilir,
+         - Sistem üzerinden kendisine gönderilen mesajları görüntüleyebilir ve yeni mesaj oluşturabilir.
+     
+#### 2. Yazar Paneli
+        - Profil sekmesinden kullanıcı bilgileri ve görseli gibi alanları düzenleyebilirler,
+        - Oluşturmuş olduğu başlıkları göüntüleyebilir, yeni başlık oluşturabilir ve başlığa gelen yorumları görüntüleyebilir,
+        - Sözlük içerisinde yer alan tüm başlıkları görüntüleyebilir,
+        - Başka başlıklara yapmış olduğu geçmiş yorumları görüntüleyebilir,
+        - Diğer yazarlar ile iki taraflı mesaj oluşturabilir.
+
+#### 3.Sözlük Paneli
+       - Sözlük içerisinde açılan başlıkları görüntüleyebilir, 
+       - Başlığı açan yazar bilgilerini ve yorum sahiplerinin bilgilerini görüntüleyebilir.
+
+#### 4.Vitrin Paneli
+       - Kullanıcılar sözlük uygulamasına dair bilgi edinebilir,
+       - İletişim formu ile sözlük yöneticisine mesaj gönderebilir,
+       - Sözlük uygulamasına giriş yapabilir.
+
+# Kullanılan Teknolojiler
+-------------------------------------------------------------------------
+* C# 
+* Asp.Net Mvc5
+* Sql Server
+* Linq Sorguları
+* Entity Framework (ORM) - Code First
+* N-Tier Architecture
+* Fluent Validation
+* Proje Seviyesinde Authorize
+-------------------------------------------------------------------------
 # UYGULAMA İÇİNDEN GÖRÜNTÜLER
 
 * ### Yetenek Kartım
