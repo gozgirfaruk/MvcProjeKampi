@@ -70,14 +70,14 @@ bilgilerini okuyabilirler.
 
 
 * ### Mesaj Kutusu
-* ![Ekran Görüntüsü (58)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/1975e6aa-c5f4-4469-974f-63aefcca93fe)
+ ![Ekran Görüntüsü (58)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/1975e6aa-c5f4-4469-974f-63aefcca93fe)
 
 
 * ### İstatistik 
 ![Ekran Görüntüsü (54)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/8794b497-3037-4749-8ef2-81ffa8f707a0)
 
 
-* Yazar Giriş Sayfası
+* ### Yazar Giriş Sayfası
 ![Ekran Görüntüsü (65)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/21e809b0-4a40-4332-94ea-85d5d426017b)
 
 
