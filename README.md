@@ -46,6 +46,7 @@ bilgilerini okuyabilirler.
 * N-Tier Architecture
 * Fluent Validation
 * Proje Seviyesinde Authorize
+* Entity State
 -------------------------------------------------------------------------
 # UYGULAMA İÇİNDEN GÖRÜNTÜLER
 
