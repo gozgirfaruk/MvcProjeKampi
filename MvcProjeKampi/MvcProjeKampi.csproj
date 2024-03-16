@@ -2110,6 +2110,15 @@
     <Content Include="Template\Home\webfonts\fa-brands-400.svg" />
     <Content Include="Template\Home\webfonts\fa-regular-400.svg" />
     <Content Include="Template\Home\webfonts\fa-solid-900.svg" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2852%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2853%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2854%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2855%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2856%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2857%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2858%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2860%29.png" />
+    <Content Include="Template\Image\Ekran Görüntüsü %2865%29.png" />
     <Content Include="Template\Login\css\main.css" />
     <Content Include="Template\Login\css\util.css" />
     <Content Include="Template\Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
