@@ -93,6 +93,9 @@ bilgilerini okuyabilirler.
 ![Ekran Görüntüsü (61)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/9ea27557-3c86-42aa-b939-4ab7e81ddfe7)
 
 
+![Ekran Görüntüsü (67)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/f183efd3-3219-479f-9f22-d23b71d4edf6)
+
+
 ![Ekran Görüntüsü (62)](https://github.com/gozgirfaruk/MvcProjeKampi/assets/125920944/a371b2c2-0f57-4aa8-8c18-c86c69c222e9)
 
 
