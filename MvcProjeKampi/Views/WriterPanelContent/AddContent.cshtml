@@ -1,0 +1,47 @@
+﻿﻿@model EntityLayer.Concrete.Content
+@{
+    ViewBag.Title = "AddContent";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<html>
+@using (Html.BeginForm("AddContent", "WriterPanelContent", FormMethod.Post))
+{
+    <body class="hold-transition sidebar-mini">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card card-primary">
+
+                            <form role="form">
+                                <div class="card-body">
+                                    <input type="hidden" name="HeadingID" value="@ViewBag.d" />
+                                    <div class="form-group">
+                                        <label>İçeriğinizi Yazınız</label>
+                                        @Html.TextAreaFor(x => x.ContentValue, 10, 30, new { @class = "form-control" })
+                                    </div>
+
+
+
+                                </div>
+                                <!-- /.card-body -->
+
+                                <div class="card-footer">
+                                    <button class="btn btn-primary">Kaydet</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+
+    </body>
+}
+</html>
