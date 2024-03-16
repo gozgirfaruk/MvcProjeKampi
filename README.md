@@ -3,7 +3,7 @@
 ### Proje Hakkında 
 Proje insanların gündem akışını takip etmesini, yaşamış oldukları problemler konusunda 
 yardım almalarını ve konu başlıklarına dair bilgi havuzu oluşturmak, kullanıcıların bu 
-bilgiler hakkında yorum yapabilmelerini sağlamaktır.Kullanıcılar başlıklar aradıkları
+bilgiler üzerinden birbirleri ile etkileşimde bulunmasını sağlamaktır.Kullanıcılar başlıklar aradıkları
 kelime veya kavramların başlıklarını açarak diğer kullanıcıların yorumlarını ve 
 bilgilerini okuyabilirler.
 --------------------
