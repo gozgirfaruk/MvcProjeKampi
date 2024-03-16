@@ -38,5 +38,13 @@ namespace MvcProjeKampi.Controllers
             abm.AboutAdd(p);
             return RedirectToAction("Index");
         }
+
+        public ActionResult StatusChange(int id)
+        {
+            var values = abm.GetByID(id);
+            values.AboutStatus = true;
+            abm.AboutUpdate(values);
+            return RedirectToAction("Index");
+        }
     }
 }

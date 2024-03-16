@@ -54,8 +54,7 @@
                             <th style="width: 8%" class="text-center">
                                 Eklenti Resmi
                             </th>
-                            <td>Güncelle</td>
-                            <td>Sil</td>
+                            <td>Durum</td>
 
                         </tr>
                     </thead>
@@ -63,36 +62,42 @@
                         @foreach (var item in Model)
                         {
 
-                            <tr>
-                                <td>
-                                    @item.AboutID
-                                </td>
-                                <td>
-                                    @item.SmallDetail
-                                </td>
-                                <td>
-                                    <a>
-                                        @item.BigDetail
-                                    </a>
-                                </td>
-                                <td>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar" src="@item.ImageUrlOne">
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar" src="@item.ImageUrlTwo">
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td><a href="#" class="btn btn-outline-danger">Pasifleştir</a></td>
-                                <td><a href="/About/Delete/@item.AboutID" class="btn btn-outline-success">Aktifleştir</a></td>
+                        <tr>
+                            <td>
+                                @item.AboutID
+                            </td>
+                            <td>
+                                @item.SmallDetail
+                            </td>
+                            <td>
+                                <a>
+                                    @item.BigDetail
+                                </a>
+                            </td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <img alt="Avatar" class="table-avatar" src="@item.ImageUrlOne">
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <img alt="Avatar" class="table-avatar" src="@item.ImageUrlTwo">
+                                    </li>
+                                </ul>
+                            </td>
+                            @if (item.AboutStatus == true)
+                            {
+                                <td><a href="/About/Delete/@item.AboutID" class="btn btn-outline-success">Aktif</a></td>
+                            }
+                            else
+                            {
+                                <td><a href="/About/StatusChange/@item.AboutID" class="btn btn-outline-danger">Pasif</a></td>
+                            }
 
-                            </tr>
+                        </tr>
                         }
                     </tbody>
                 </table>

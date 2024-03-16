@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+
+
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>İstatistik</h1>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-red"><i class="fa-solid fa-layer-group"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Toplam Kategori Sayısı</span>
+                        <span class="info-box-number">@ViewBag.one</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-warning"><i class="fa-solid fa-ranking-star"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Spora Ait Başlık Sayısı</span>
+                        <span class="info-box-number">@ViewBag.two</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-primary"><i class="fa-solid fa-a"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">İçinde "A" Geçen Yazar Sayısı</span>
+                        <span class="info-box-number">@ViewBag.three</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-gradient-green"><i class="fa-solid fa-plus"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Aktif Kategori SAyısı</span>
+                        <span class="info-box-number">@ViewBag.five</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-secondary"><i class="fa-solid fa-plus-minus"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Aktif ve Pasif Kategori Farkı</span>
+                        <span class="info-box-number">@ViewBag.result</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-gradient-lime"><i class="fa-solid fa-lock"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Yetkili Sayısı</span>
+                        <span class="info-box-number">@ViewBag.six</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-gradient-orange"><i class="fa-solid fa-user-tie"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Üst Düzey Yetkili Sayısı</span>
+                        <span class="info-box-number">@ViewBag.seven</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-black"><i class="fa-solid fa-unlock-keyhole"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">2.Dereceden Yetkili Sayısı</span>
+                        <span class="info-box-number">@ViewBag.eight</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-purple"><i class="fa-regular fa-image"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Galeri Dosya Sayısı</span>
+                        <span class="info-box-number">@ViewBag.nine</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-fuchsia"><i class="fa-solid fa-phone-volume"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">İletişime Geçenler</span>
+                        <span class="info-box-number">@ViewBag.ten</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-gradient-info"><i class="fa-solid fa-hashtag"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Toplam Başlık Sayısı</span>
+                        <span class="info-box-number">@ViewBag.eleven</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-gradient-navy"><i class="fa-solid fa-feather-pointed"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Toplam Yazar Sayısı</span>
+                        <span class="info-box-number">@ViewBag.twelve</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

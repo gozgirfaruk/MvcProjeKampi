@@ -1,8 +1,70 @@
-﻿
+﻿﻿@model EntityLayer.Concrete.Writer
 @{
     ViewBag.Title = "WriterProfile";
     Layout = "~/Views/Shared/_WriterLayout.cshtml";
 }
 
-<h2>WriterProfile</h2>
+<h2 style="margin-left:15px;">Profilinizi Düzenleyin</h2>
 
+@using (Html.BeginForm("WriterProfile", "WriterPanel", FormMethod.Post))
+{
+    <body class="hold-transition sidebar-mini">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card card-primary">
+
+                            <form role="form">
+                                <div class="card-body">
+                                    <div class="form-group">
+
+                                        @Html.TextBoxFor(x => x.WriterID, new { @type = "hidden" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Yazar Adı</label>
+                                        @Html.TextBoxFor(x => x.FirstName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.FirstName, null, new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Yazar Soyadı</label>
+                                        @Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.LastName, null, new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ünvan</label>
+                                        @Html.TextBoxFor(x => x.WriterAbout, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.WriterAbout, null, new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Profil Resmi</label>
+                                        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>E-posta</label>
+                                        @Html.TextBoxFor(x => x.eMail, new { @class = "form-control" ,@type="email"})
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Şifre</label>
+                                        @Html.TextBoxFor(x => x.Password, new { @class = "form-control" ,@type="password"})
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+
+                                <div class="card-footer">
+                                    <button class="btn btn-primary">Değişiklikleri Kaydet</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+
+    </body>
+}

@@ -2,9 +2,9 @@
 @{
     Layout = null;
 }
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
 @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
 {
     <div class="form-control">
@@ -19,8 +19,15 @@
         @Html.TextBoxFor(x => x.Description)
         @Html.ValidationMessageFor(x => x.Description)
         <br />
-        <button class="btn btn-success">Kaydet</button>
+        <button class="btn btn-success" id="btn1">Kaydet</button>
 
 
     </div>
+<script>
+    $('#btn1').click(function () {
+
+        swal("Harika!", "Kategıri Başarı İle Eklendi!", "success");
+    })
+</script>
 }
+
