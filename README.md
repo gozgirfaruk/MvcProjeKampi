@@ -1,11 +1,15 @@
 # SÖZLÜK FORM UYGULAMASI
 
 ### Proje Hakkında 
-Proje insanların gündem akışını takip etmesini, yaşamış oldukları problemler konusunda 
-yardım almalarını ve konu başlıklarına dair bilgi havuzu oluşturmak, kullanıcıların bu 
+Proje insanların gündem başlıklarını takip etmesini, merak edilen konularda bilgi edinmelerini sağlamak amacı ile
+konu başlıklarına dair bilgi havuzu oluşturmak, kullanıcıların bu 
 bilgiler üzerinden birbirleri ile etkileşimde bulunmasını sağlamaktır.Kullanıcılar başlıklar aradıkları
 kelime veya kavramların başlıklarını açarak diğer kullanıcıların yorumlarını ve 
 bilgilerini okuyabilirler.
+---------------------------
+- Başlıklar: Aradığın her şey bir başlık altında. Kelimeleri gir, yorumları ve bilgileri keşfet.
+- Bilgi Havuzu: Konu başlıkları, adeta birer bilgi hazinesi. Hem öğren, hem de katkıda bulun.
+- Etkileşim: Diğer kullanıcılarla fikir alışverişinde bulun, deneyimlerini paylaş.
 --------------------
 ### Proje Detay
 * Proje N Katmanlı Mimari kullanılarak geliştirildi. Poje içerisinde 4 farklı kullanıcı paneli ile sunulmaktadır.
